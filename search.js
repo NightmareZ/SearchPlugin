@@ -1,4 +1,4 @@
-define(function() {
+define('search', [], function() {
     (function ($) {
         /*
          * func - function (textFieldValue, function (keyValuesResult))
