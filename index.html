@@ -103,8 +103,8 @@
                     var result = [];
 
                     text = text.toLowerCase();
-                    _.each(arr, function(item) {
-                        if (item.indexOf(text) != -1) {
+                    _.each(arr, function (item) {
+                        if (item.length >= text.length && text == item.substr(0, text.length)) {
                             result.push(item);
                         } 
                     });
