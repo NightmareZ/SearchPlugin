@@ -21,7 +21,7 @@
                     }
 
                     var list = ul.find('li');
-                    var finded = false;
+                    var found = false;
 
                     for (var j = list.length - 1; j >= 0; --j) {
                         if ($(list[j]).hasClass('searchPluginListSelected')) {
@@ -30,12 +30,12 @@
                                 $(list[j - 1]).addClass('searchPluginListSelected');
                             }
 
-                            finded = true;
+                            found = true;
                             break;
                         }
                     }
 
-                    if (!finded && list.length > 0) {
+                    if (!found && list.length > 0) {
                         $(list[list.length - 1]).addClass('searchPluginListSelected');
                     }
 
@@ -49,7 +49,7 @@
                     }
 
                     var list = ul.find('li');
-                    var finded = false;
+                    var found = false;
 
                     for (var j = 0; j < list.length; ++j) {
                         if ($(list[j]).hasClass('searchPluginListSelected')) {
@@ -58,12 +58,12 @@
                                 $(list[j + 1]).addClass('searchPluginListSelected');
                             }
 
-                            finded = true;
+                            found = true;
                             break;
                         }
                     }
 
-                    if (!finded && list.length > 0) {
+                    if (!found && list.length > 0) {
                         $(list[0]).addClass('searchPluginListSelected');
                     }
 
